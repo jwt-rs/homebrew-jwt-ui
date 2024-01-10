@@ -13,4 +13,4 @@ jobs:
 
       - name: Install tools
         run: |
-          brew install --build-bottle --verbose Formula/jwtui.rb && jwtui -h
+          brew install --build-bottle --verbose Formula/jwt-ui.rb && jwtui -h
