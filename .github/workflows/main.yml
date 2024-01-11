@@ -19,7 +19,7 @@ jobs:
           (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/runner/.bash_profile
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           brew install --build-bottle --verbose Formula/jwt-ui.rb
-          kdash -h
+          jwtui -h
       - name: Install tools Mac
         if: matrix.runs-on == 'macOS-latest'
         shell: bash
@@ -28,4 +28,4 @@ jobs:
           (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/runner/.bash_profile
           eval "$(/usr/local/bin/brew shellenv)"
           brew install --build-bottle --verbose Formula/jwt-ui.rb
-          kdash -h
+          jwtui -h
