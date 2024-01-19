@@ -5,16 +5,16 @@ class JwtUi < Formula
   desc "A Terminal UI for decoding/encoding JSON Web Tokens"
   homepage "https://github.com/jwt-rs/jwt-ui"
   if OS.mac? and Hardware::CPU.arm?
-    url "https://github.com/jwt-rs/jwt-ui/releases/download/v1.0.5/jwtui-macos-arm64.tar.gz"
-    sha256 "7269707f6dfcacda3b092a0f67ce4c79bbbb11dc3b29d41df26617c500441c27"
+    url "https://github.com/jwt-rs/jwt-ui/releases/download/v1.0.6/jwtui-macos-arm64.tar.gz"
+    sha256 "896a9e7f2330c40f2f2d96aa8304e6df3353e87515f60bfebc61c43655a35704"
   elsif OS.mac? and Hardware::CPU.intel?
-    url "https://github.com/jwt-rs/jwt-ui/releases/download/v1.0.5/jwtui-macos.tar.gz"
-    sha256 "6b40e0bc285e549ce411e1ab6f037c244fc999186ca6e9527ef0fc9a34655009"
+    url "https://github.com/jwt-rs/jwt-ui/releases/download/v1.0.6/jwtui-macos.tar.gz"
+    sha256 "979fd97786abd43bb13391216f70e30da66ee542d8c12f1be945d5717f6ed01f"
   else
-    url "https://github.com/jwt-rs/jwt-ui/releases/download/v1.0.5/jwtui-linux.tar.gz"
-    sha256 "cd8f0f156b6052c3da09015cd9dfd9e30c5d1c6be2bcf945c8ac900e58cc1141"
+    url "https://github.com/jwt-rs/jwt-ui/releases/download/v1.0.6/jwtui-linux.tar.gz"
+    sha256 "9579c9b101cf19c6eda70ec0f40387854ae341148551686229e8bd478f656599"
   end
-  version "v1.0.5"
+  version "v1.0.6"
   license "MIT"
 
   def install
